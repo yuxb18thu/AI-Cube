@@ -22,7 +22,8 @@ pip install flask
 
 #### DeepCubeA 代码运行环境配置 
 
-下载：Docker Community Edition (CE): https://www.docker.com/community-edition nvidia-docker: https://github.com/NVIDIA/nvidia-docker/ 
+下载：Docker Community Edition (CE): https://www.docker.com/community-edition 
+nvidia-docker: https://github.com/NVIDIA/nvidia-docker/ 
 
 系统依赖库安装： apt-get update && apt-get install -y --no-install-recommends \ "build-essential=12.4ubuntu1" "libboost-all-dev=1.65.1.0ubuntu1" \ "libboost-dev=1.65.1.0ubuntu1" && rm -rf /var/lib/apt/lists/* 
 
@@ -32,6 +33,6 @@ pip install flask
 
 ### 运行与使用
 
-1. 从https://codeocean.com/capsule/5723040/tree/v1下载训练过的模型，放入正确的文件路径(/code/savedModels/…)
+1. 从https://codeocean.com/capsule/5723040/tree/v1  下载训练过的模型，放入正确的文件路径(/code/savedModels/…)
 2. 在/interface/server.py中更改ip，并运行python server.py，将网站部署到当前设备。
 3. 打开网址为127.0.0.1:5000的网页，端口可以在/interface/server.py底部编辑。
